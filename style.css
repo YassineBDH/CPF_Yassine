@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-image: url('LoL-Worlds-Championship 1.png');
+    font-family: 'joti One';
+
+}
+
+nav {
+    width: 100wh;
+    height: 7vh;
+    display: flex;
+    justify-content: left;
+    background-color: blue;
+}
+
+nav a {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    background-color: brown;
+    font-size: 20px;
+    transition: 0.3s;
+    margin: 10px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+    background-color: chartreuse;
+    bottom: -1px;
+    width: 0%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+a:hover {
+    color: black;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+.logoLol {
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+p {
+    background-color: rgba(137, 43, 226, 0.308);
+    color: rgb(233, 156, 14);
+    position: relative;
+    left: 17%;
+    margin: 20px;
+    padding: 20px;
+    max-width: 850px;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        left: 0;
+        margin: 10px; 
+        padding: 10px; 
+        font-size: 1.4rem; 
+    }
+
+    nav {
+        height: auto; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    nav a {
+        margin: 5px;
+    }
+}
